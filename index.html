@@ -864,12 +864,7 @@
             </table>
         </section>
 
-        <section id="about-me" class="about-section">
-            <h2>About Me</h2>
-            <p><strong>Hey, I am Tahera! 👋</strong></p>
-            <p>Welcome to my own little corner of the internet. I am a researcher driven by pure curiosity. When I first started looking into Down syndrome, I realized that simple answers just weren't enough—I wanted to look closer, ask deeper questions, and uncover the real, microscopic science behind it all.</p>
-            <p>This website is the result of that obsessive curiosity. I built this platform to document the exact genetic, molecular, and biological secrets of how development shifts starting from Day One. I believe that understanding the tiny cellular instruction manuals shouldn't just be hidden away in heavy laboratory textbooks—it belongs out here in the open, beautifully mapped out for anyone searching for the real truth.</p>
-            <p class="highlight-box">"Because the most profound stories of human life are written in the smallest microscopic details."</p>
+         details."</p>
         </section>
     </div>
 
@@ -2085,6 +2080,383 @@
     <footer>
         <p>&copy; 2026 Tahera. Powered by GitHub Pages.</p>
     </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent Research Project | Biotech & Fetal Medicine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #131c2e;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent-glow: #38bdf8;
+            --accent-grad: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            --warning-border: #f59e0b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Hero / Welcome Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(180deg, rgba(56, 189, 248, 0.1) 0%, rgba(11, 15, 25, 0) 100%);
+            border-radius: 16px;
+            margin-bottom: 3rem;
+        }
+
+        .micro-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-glow);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding: 0.25rem 0.75rem;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 50px;
+            background: rgba(56, 189, 248, 0.05);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: var(--accent-grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Disclaimer Section */
+        .disclaimer-panel {
+            background: var(--card-bg);
+            border-left: 4px solid var(--warning-border);
+            padding: 2rem;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 4rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .panel-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--warning-border);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .disclaimer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .disclaimer-grid { grid-template-columns: 1fr; }
+        }
+
+        .sub-block h4 {
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .sub-block p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* Quick About Section */
+        .about-card {
+            background: radial-gradient(circle at top left, rgba(129, 140, 248, 0.15), transparent 60%), var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            margin-bottom: 4rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .about-card h2 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        /* FAQs */
+        .faq-section {
+            margin-bottom: 4rem;
+        }
+
+        .faq-section h2 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .faq-category-title {
+            font-size: 1.1rem;
+            color: var(--accent-glow);
+            margin: 2rem 0 1rem 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        details {
+            background: var(--card-bg);
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        summary {
+            padding: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '＋';
+            color: var(--accent-glow);
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            content: '－';
+        }
+
+        details[open] {
+            border-color: rgba(56, 189, 248, 0.4);
+        }
+
+        .faq-content {
+            padding: 0 1.2rem 1.2rem 1.2rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Contact Call to Action */
+        .cta-box {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.1) 0%, rgba(129, 140, 248, 0.1) 100%);
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-box p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .email-btn {
+            display: inline-block;
+            background: var(--accent-grad);
+            color: #000;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .email-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="hero">
+            <span class="micro-tag">Independent Student Initiative</span>
+            <h1>🔬 Welcome to My Research Project</h1>
+            <p>Exploring the theoretical horizons of biotechnology, computational genetics, and future therapeutic pipelines in fetal medicine.</p>
+        </header>
+
+        <section class="disclaimer-panel">
+            <div class="panel-title">
+                <span>⚠️</span> Theoretical Exploration — Not Medical Advice
+            </div>
+            <p><strong>For Educational & Intellectual Purposes Only:</strong> Every biological mechanism, biochemical pathway, computational dosing target, and therapeutic roadmap detailed across this website is entirely conceptual. This project represents a comprehensive literature review and speculative hypothesis exploring future avenues in genetic medicine.</p>
+            
+            <div class="disclaimer-grid">
+                <div class="sub-block">
+                    <h4>Consult the Professionals</h4>
+                    <p>This work does not constitute medical guidance, diagnosis, or clinical protocol. These ideas have not been evaluated by regulatory bodies or validated via clinical trials. Always consult a qualified medical professional for health or pregnancy concerns.</p>
+                </div>
+                <div class="sub-block">
+                    <h4>Limitation of Responsibility</h4>
+                    <p>Shared "as is" to invite academic discussion. The author is not liable for how readers interpret or apply this text. No part of these speculative frameworks should ever be attempted or replicated outside certified clinical research facilities.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-card">
+            <h2>About the Researcher</h2>
+            <p>Driven by a deep personal passion for genetics, human development, and molecular biology, I built this space to organize independent explorations into advanced therapeutics. As a 17-year-old independent student researcher, my goal is to synthesize complex peer-reviewed biological paradigms into structured, forward-thinking pipelines—fostering academic curiosity and imagining what the next era of medicine could look like.</p>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-category-title">Project & Author Overview</div>
+            
+            <details>
+                <summary>How can a 17-year-old formulate complex biotech pipelines?</summary>
+                <div class="faq-content">
+                    This project is built upon hundreds of hours analyzing openly available, peer-reviewed scientific literature, textbooks, and genomic data. While I do not have laboratory access, modern bioinformatics, computational tools, and deep reading allow independent students to map and hypothesize therapeutic concepts frameworks entirely in-silico.
+                </div>
+            </details>
+
+            <details>
+                <summary>Are these genetic therapies being tested right now?</summary>
+                <div class="faq-content">
+                    No. The protocols outlined here are purely theoretical models. Real-world implementation of fetal genetic interventions faces complex bioethical considerations, regulatory pathways, and technical hurdles that current medicine is still navigating.
+                </div>
+            </details>
+
+            <div class="faq-category-title">Myths & Realities: Understanding Down Syndrome</div>
+
+            <details>
+                <summary>1. Myth: Down syndrome is a rare genetic condition.</summary>
+                <div class="faq-content">
+                    <strong>Reality:</strong> Down syndrome (Trisomy 21) is one of the most common congenital chromosomal conditions globally, occurring in approximately 1 in every 700 live births.
+                </div>
+            </details>
+
+            <details>
+                <summary>2. Myth: People with Down syndrome have a very short life expectancy.</summary>
+                <div class="faq-content">
+                    <strong>Reality:</strong> Due to massive advancements in pediatric cardiology and medical care, life expectancy has dramatically increased. Many individuals with Down syndrome live healthy lives well into their 60s and 70s today.
+                </div>
+            </details>
+
+            <details>
+                <summary>3. Myth: Down syndrome is entirely inherited from the parents.</summary>
+                <div class="faq-content">
+                    <strong>Reality:</strong> The vast majority of Down syndrome cases occur due to a random, non-inherited error during the division of reproductive cells (nondisjunction). Only a rare type, called Translocation Down syndrome, can sometimes be passed down from a carrier parent.
+                </div>
+            </details>
+
+            <details>
+                <summary>4. Myth: Individuals with Down syndrome cannot live independently or hold jobs.</summary>
+                <div class="faq-content">
+                    <strong>Reality:</strong> With proper educational infrastructure and community support, many adults with Down syndrome hold rewarding jobs, live independently or in assisted living settings, cook, manage money, and drive.
+                </div>
+            </details>
+
+            <details>
+                <summary>5. Myth: Down syndrome causes severe, unvarying cognitive limitations.</summary>
+                <div class="faq-content">
+                    <strong>Reality:</strong> Down syndrome causes mild-to-moderate intellectual differences, but it varies widely from person to person. Every individual possesses unique strengths, talents, learning paces, and cognitive profiles.
+                </div>
+            </details>
+
+            <details>
+                <summary>6. Myth: People with Down syndrome are always happy and smiling.</summary>
+                <div class="faq-content">
+                    <strong>Reality:</strong> This stereotype oversimplifies human emotional complexity. Individuals with Down syndrome experience the exact same full spectrum of emotions as anyone else—including anger, sadness, frustration, excitement, and grief.
+                </div>
+            </details>
+
+            <details>
+                <summary>7. Myth: Adults with Down syndrome are essentially just "big children."</summary>
+                <div class="faq-content">
+                    <strong>Reality:</strong> Infantalizing adults with Down syndrome is harmful. They are mature individuals who navigate adult life, form romantic relationships, experience adulthood, and deserve to be addressed and treated with age-appropriate respect.
+                </div>
+            </details>
+
+            <details>
+                <summary>8. Myth: Specialized therapies make no real difference in their development.</summary>
+                <div class="faq-content">
+                    <strong>Reality:</strong> Early childhood interventions—including speech, physical, and occupational therapies—dramatically optimize developmental milestones, speech clarity, motor control, and long-term autonomy.
+                </div>
+            </details>
+
+            <details>
+                <summary>9. Myth: Down syndrome only occurs in pregnancies of older mothers.</summary>
+                <div class="faq-content">
+                    <strong>Reality:</strong> While the statistical probability increases with maternal age, a significant percentage of babies with Down syndrome are born to mothers under 35, simply because there are far more births overall within that age demographic.
+                </div>
+            </details>
+
+            <details>
+                <summary>10. Myth: Scientists can simply "turn off" the extra chromosome easily in a living person.</summary>
+                <div class="faq-content">
+                    <strong>Reality:</strong> Chromosome silencing (such as utilizing the Xist gene) is actively being studied in isolated laboratory cell cultures. However, scaling this safely across billions of cells in a living human embryo or individual remains an immense, highly complex bioengineering and clinical challenge.
+                </div>
+            </details>
+        </section>
+
+        <section class="cta-box">
+            <h3>Let's Collaborate & Discuss</h3>
+            <p>Are you a researcher, student, or bioicist interested in theoretical therapeutics? I'd love to hear your feedback, critiques, or insights on these pipelines.</p>
+            <a href="mailto:ishqatmustafaslyallhlyhwslm@gmail.com" class="email-btn">Connect via Gmail</a>
+        </section>
+
+    </div>
 
 </body>
 </html>
