@@ -40,10 +40,8 @@
     color: var(--text-muted);
     margin: 0;
     padding: 0;
-}
-
-/* 🎨 THE CRISP TEXTBOOK CARD FIX */
-.highlight-box, .reassurance-box, .info-box, blockquote, .card {
+/* 🎨 THE CRISP TEXTBOOK CARD & TABLE FIX */
+.highlight-box, .reassurance-box, .info-box, blockquote, .card, table {
     background-color: #fcfbf7 !important;     /* Soft cream white background */
     color: #2c3531 !important;                 /* Deep charcoal text for readability */
     border-left: 5px solid #116466 !important; /* Premium deep muted teal accent bar */
@@ -51,12 +49,28 @@
     border-radius: 8px;
     margin: 25px 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Drop shadow overlay */
+    border-collapse: collapse;                 /* Cleans up table lines */
+    width: 100%;
 }
 
-/* Fixes italic/bold text inside these specific white boxes so it stays dark and crisp */
-.highlight-box *, .reassurance-box *, .info-box *, blockquote *, .card * {
+/* 🔍 FORCES ALL TEXT INSIDE CARDS AND TABLES TO STAY DARK AND CRISP */
+.highlight-box *, .reassurance-box *, .info-box *, blockquote *, .card *, table, tr, th, td {
     color: #2c3531 !important;
 }
+
+/* Adds clean subtle grid lines to the timeline table so it looks like a premium journal */
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+/* Keeps your header row dark blue with crisp white text exactly like your layout design */
+thead th, th {
+    background-color: #161f30 !important;
+    color: #ffffff !important;
+}
+
 
 
 
