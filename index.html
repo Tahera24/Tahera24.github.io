@@ -40,37 +40,54 @@
     color: var(--text-muted);
     margin: 0;
     padding: 0;
-/* 🎨 THE CRISP TEXTBOOK CARD & TABLE FIX */
-.highlight-box, .reassurance-box, .info-box, blockquote, .card, table {
-    background-color: #fcfbf7 !important;     /* Soft cream white background */
-    color: #2c3531 !important;                 /* Deep charcoal text for readability */
-    border-left: 5px solid #116466 !important; /* Premium deep muted teal accent bar */
-    padding: 22px;
-    border-radius: 8px;
-    margin: 25px 0;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Drop shadow overlay */
-    border-collapse: collapse;                 /* Cleans up table lines */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+    background-color: var(--bg-color);
+    color: var(--text-muted);
+    margin: 0;
+    padding: 0;
+}
+
+/* 🎨 THE ULTRA-PREMIUM ACADEMIC TEXTBOOK PANEL CONFIG */
+.highlight-box, .reassurance-box, .info-box, blockquote, .card, table,
+[class*="-box"], [class*="card"], [class*="timeline"], .visual-map, 
+div[style*="background-color: white"], div[style*="background-color: #ffffff"] {
+    background-color: #fdfcf7 !important;     /* Premium aesthetic soft ivory paper background */
+    color: #232926 !important;                 /* Deep rich charcoal print text for flawless reading */
+    border-left: 6px solid #145a5c !important; /* Elegant deep-sea medical teal side anchor line */
+    padding: 24px;
+    border-radius: 12px;
+    margin: 28px 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);  /* Smooth, high-contrast premium drop shadow */
+    border-collapse: collapse;
     width: 100%;
+    box-sizing: border-box;
 }
 
-/* 🔍 FORCES ALL TEXT INSIDE CARDS AND TABLES TO STAY DARK AND CRISP */
-.highlight-box *, .reassurance-box *, .info-box *, blockquote *, .card *, table, tr, th, td {
-    color: #2c3531 !important;
+/* 🔍 ULTIMATE LOOPHOLE CRUSHER: Brightens every single hidden tag, bullet point, and heading */
+.highlight-box *, .reassurance-box *, .info-box *, blockquote *, .card *, table *, 
+[class*="-box"] *, [class*="card"] *, [class*="timeline"] *, .visual-map *,
+div[style*="background-color: white"] *, div[style*="background-color: #ffffff"] * {
+    color: #232926 !important;                 /* Forces lists, bold text, and subtitles to charcoal */
+    background-color: transparent !important;  /* Instantly wipes out nested white boxes that cause blur */
 }
 
-/* Adds clean subtle grid lines to the timeline table so it looks like a premium journal */
+/* 📊 SLEEK GRID BOUNDARIES FOR INDEPENDENT RESEARCH MAPS */
 th, td {
-    padding: 12px;
-    border-bottom: 1px solid #e5e7eb;
+    padding: 14px;
+    border-bottom: 1px solid #e1e5e2 !important; /* Soft, clean horizontal dividers */
     text-align: left;
 }
 
-/* Keeps your header row dark blue with crisp white text exactly like your layout design */
-thead th, th {
-    background-color: #161f30 !important;
-    color: #ffffff !important;
+/* ⚓ STUNNING ACADEMIC TIMELINE HEADERS */
+thead th, th, .table-header {
+    background-color: #121b29 !important;      /* Deep midnight metallic slate blue */
+    color: #ffffff !important;                  /* Luminous white text for table main labels */
 }
-
+thead th *, th * {
+    color: #ffffff !important;                  /* Keeps nested header bold elements pure white */
+}
 
 
 
